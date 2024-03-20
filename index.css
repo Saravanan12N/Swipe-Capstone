@@ -316,3 +316,58 @@ row-gap: var(--spacing-md) ;
     padding: 0 0 0 var(--spacing-sm);
     line-height: 28px;
 }
+
+.swipe-sessions-card {
+    border:4px solid white;
+    border-radius: 20px;
+    width:320px;
+    height: 140px;
+}
+
+
+.swipe-sessions-card .card-bottom::before{
+    
+    content: "";
+    
+    position: absolute;
+    transform: skew(-4deg);
+    top:-40%;
+
+}
+
+.swipe-sessions-card .card-bottom{
+    background-color:white;
+    position: relative;
+    }
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-white);
+    flex-direction: row;
+}
+footer .col{
+    width:25%;
+}
+
+footer nav {
+    background-color: aliceblue;
+    width: 100%;
+    display: flex;
+    }
+footer nav li {
+    
+    list-style: none;
+    line-height: 30px;
+}
+
+footer nav li a{
+    color: black;
+    margin: 0 var(--spacing-md);
+    
+}
+
+footer nav li a:hover{
+    text-decoration: underline;
+}
